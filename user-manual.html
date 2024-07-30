@@ -197,6 +197,7 @@
 	<h3>4. Open the configuration webpage:</h3>
 	<ul>
 		<li><a href="http://bible.local/configuration.html">http://bible.local/configuration.html</a></li>
+		<li>Note: to access <a href="http://bible.local">bible.local</a> on a smartphone, it may be necessary to disable cellular data or enable WiFi in Airplane Mode.</li>
 	</ul>
 	<h3>5. Change the server password:</h3>
 	<ul>
@@ -244,6 +245,110 @@
 	<ul>
 		<li><b>BibleSD</b>: media can be removed and inserted into another computer, smartphone, or tablet. <b>Give it away to someone, then create more BibleSD media to distribute!</b></li>
 		<li><b>Bible.Local</b>: media can be removed and inserted into a supported board to create another Bible.Local system. Note: the server password will <b>not</b> be the default password, and will instead be the same as the current password of the Bible.Local system used for duplication.  Follow the steps in <i>Start and Configure</i> for the new Bible.Local system.</li>
+	</ul>
+
+	<h1><a id="bible-software">Bible.Local Software</a></h1>
+	<h3>Translations</h3>
+	<a href="pics/translations.png"><img src="pics/translations.png"></a>
+	<ul>
+		<li><a href="http://bible.local/translations.html">Translations</a> contains links to 1,300 translations of the Bible in HTML and eBook (epub) formats.  The HTML format opens in the browser and the eBook format downloads as a file that can be opened by eBook readers.</li>
+		<li>Plain text format is available by changing the URL path from <b>html</b> to <b>text</b>, as shown in this example:
+			<ul>
+				<li><a href="http://bible.local/biblesd/bibles/ebible.org/Chinese/html/cmn-cu89s/">bible.local/biblesd/bibles/ebible.org/Chinese/<b>html</b>/cmn-cu89s/</a></li>
+				<li><a href="http://bible.local/biblesd/bibles/ebible.org/Chinese/text/cmn-cu89s/">bible.local/biblesd/bibles/ebible.org/Chinese/<b>text</b>/cmn-cu89s/</a></li>
+			</ul>
+		</li>
+		<li>This content originates from <a href="https://ebible.org/">eBible.org</a>.</li>
+	</ul>
+	<h3>SuperSearch</h3>
+	<a href="pics/biblesupersearch.png"><img src="pics/biblesupersearch.png"></a>
+	<ul>
+		<li><a href="http://bible.local/biblesupersearch_client/">Bible SuperSearch</a> is a multilingual advanced search that enables searching for passages of Scripture using both verse references and keywords.</li>
+		<li>Multiple translations and languages can be searched in parallel by clicking <b>Add Bible</b> and selecting from the dropdown menu.</li>
+		<li>Detailed API documentation is available at <a href="http://bible.local/biblesupersearch_api/public/">bible.local/biblesupersearch_api/public/</a></li>
+		<li>An administrative interface provides controls to configure the search and install additional Bible texts:
+			<ul>
+				<li>URL: <a href="http://bible.local/biblesupersearch_api/public/login">http://bible.local/biblesupersearch_api/public/login</a></li>
+				<li>username: <b>biblesupersearch</b></li>
+				<li>password: <b>John14-6</b></li>
+			</ul>
+		</li>
+		<li>This site is a stand-alone instance of the database and API available from <a href="https://www.biblesupersearch.com/">biblesupersearch.com</a>.</li>
+	</ul>
+	<h3>OpenBible</h3>
+	<a href="pics/openbible.png"><img src="pics/openbible.png"></a>
+	<ul>
+		<li><a href="http://bible.local/biblesd/bibles/openbible.com/">OpenBible</a> provides interlinear English translations with Hebrew and Greek.</li>
+		<li>Specific features include:
+		<ul>
+			<li>Strongs numbering, Hebrew and Greek translations, and usage references.</li>
+			<li>Various English commentaries for each chapter of the Bible.</li>
+			<li>A powerful English word search.</li>
+		</ul>
+		</li>
+		<li>This content is a stand-alone instance of <a href="https://openbible.com">openbible.com</a> produced by <a href="https://biblehub.com/">biblehub.com</a>.</li>
+	</ul>
+	<h3>Word Lookup</h3>
+	<a href="pics/wordlookup.png"><img src="pics/wordlookup.png"></a>
+	<ul>
+		<li><a href="http://bible.local/biblesd/bibles/biblelookup/">Word Lookup</a> is the initial beta version of software providing one-click display of verses containing a Hebrew or Greek word.</li>
+		<li>All words and Strongs numbers (excluding English words less than 4 characters in length) can be clicked to display every verse where that word or Strongs number is used.</li>
+		<li>English words and Strongs linking were parsed from the <a href="https://bereanbible.com/bsb_tables.xlsx">BSB Translation Tables</a>.</li>
+		<li>There are a few places (Example: end of Zachariah 2) where English words are out of synchronization with the Hebrew text.  These issues should be corrected in a future version.  As far as is currently known, the Hebrew and Greek texts are consistent with their source texts and the known problems are related to synchronization with English text.</li>
+		<li>This is provided as a helpful resource and for reference only.  For authoritative texts, please rely on texts in <a href="http://bible.local/translations.html">Translations</a>.</li>
+	</ul>
+	<h3>Backend Services</h3>
+	<a href="pics/primary-dirs.png"><img src="pics/primary-dirs.png"></a>
+	<ul>
+		<li>Main login: <code>ssh servant@bible.local</code>
+		<ul>
+			<li>user: <b>servant</b></li>
+			<li>default password: <b>John13:14</b></li>
+		</ul>
+		</li>
+		<li>Important directories:
+		<ul>
+			<li><code>/home/servant/watercarrier</code>: Java package directory containing the classes to run the <a href="http://bible.local/duplication.html">duplication</a> and <a href="http://bible.local/configuration.html">configuration</a> web interfaces; requires <b>creek</b> and <b>paddle</b> (<a href="https://github.com/g-i-w/watercarrier">github.com/g-i-w/watercarrier</a>).</li>
+			<li><code>/home/servant/creek</code>: data file parsing and text structures (<a href="https://github.com/g-i-w/creek">github.com/g-i-w/creek</a>).</li>
+			<li><code>/home/servant/paddle</code>: mini TCP/UDP/HTTP server (<a href="https://github.com/g-i-w/paddle">github.com/g-i-w/paddle</a>).</li>
+			<li><code>/var/www/html/</code>: root web directory (<a href="https://github.com/g-i-w/watercarrier-html">github.com/g-i-w/watercarrier-html</a>).</li>
+			<li><code>/var/www/html/biblesd</code>: BibleSD content containing 1,300 Bible translations in HTML, epub, and text.</li>
+			<li><code>/var/www/html/biblesupersearch_api</code>: Bible SuperSearch backend PHP code and Bible text modules.</li>
+			<li><code>/var/www/html/biblesupersearch_client</code>: Bible SuperSearch frontend JavaScript code.</li>
+		</ul>
+		</li>
+		<li>Main software packages:
+			<ul>
+				<li><b>Apache2</b>: main web server.</i>
+				<li><b>MariaDB</b>: database supporting Bible SuperSearch:
+				<ul>
+					<li>database: <b>biblesupersearch</b></li>
+					<li>user: <b>biblesupersearch</b></li>
+					<li>password: <b>John4</b></li>
+				</ul>
+				</li>
+				<li><b>OpenJDK</b>: runtime environment for <a href="http://bible.local/duplication.html">duplication</a> and <a href="http://bible.local/configuration.html">configuration</a> web interfaces.</i>
+				<li><b>UFW</b>: firewall configuration.</li>
+			</ul>
+		</li>
+		<li>Bible.Local services (located in <code>/etc/systemd/system</code>):
+		<ul>
+			<li><b>biblelocal-configuration.service</b>: web interface to update user and WiFi passwords.</li>
+			<li><b>biblelocal-duplication.service</b>: web interface to allow duplication of BibleSD and Bible.Local media.</li>
+			<li><b>biblelocal-wifi.service</b>: operates the WiFi network.</li>
+		</ul>
+		</li>
+		<li>Open ports:
+		<ul>
+			<li><b>22</b>: <code>sshd</code> SSH login
+			<li><b>80</b>: <code>apache2</code> main web server
+			<li><b>53</b>: <code>dnsmasq</code>  (DNS & name resolution)
+			<li><b>67</b>: <code>dnsmasq</code>  (DNS & name resolution)
+			<li><b>5353</b>: <code>avahi-daemon</code> (DNS & name resolution)
+			<li><b>7000</b>: <code>java</code> duplication web interface
+			<li><b>8000</b>: <code>java</code> configuration web interface
+		</ul>
+		</li>
 	</ul>
 
 	<h1><a id="conclusion">Conclusion</a></h1>
