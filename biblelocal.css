@@ -5,6 +5,16 @@ img {
 	margin:0;
 	border:0;
 }
+a {
+	font-weight:normal;
+	text-decoration:none;
+	color:black;
+	padding:3px;
+	border-radius:4px;
+}
+a:hover {
+	text-decoration:underline;
+}
 h1 {
 	border-top:solid 1px #a0a0a0;
 	color:gray;
@@ -15,8 +25,12 @@ table {
 }
 td,th {
 	vertical-align:middle;
-	border-top:solid rgb(200,200,200) 1px;
+	text-align:left;
+	border-top:solid white 1px;
 	padding:8px;
+}
+td img {
+	max-height:32px;
 }
 iframe {
 	margin:0;
@@ -26,24 +40,66 @@ iframe {
 	height:500px;
 	overflow:auto;
 }
+body {
+	font-family:sans-serif;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	border:0 0 0 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-image:url('pics/lookout-mtn.jpg');
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color:black;
+}
 .icon-char {
 	font-weight:normal;
 	font-family:serif;
-	color:#a0a0a0;
+	color:gray;
 	font-size:32px;
 	width:40px;
 }
 .icon-char a {
-	color:#a0a0a0;
+	color:gray;
 	font-size:32px;
-	background-color:white;
 	text-decoration:none;
 }
 .icon-char a:hover {
 	text-decoration:underline;
 }
+.td-center {
+	padding-left:16px;
+	text-align:center;
+}
 .no-top-border td,div {
 	border-top:0;
+}
+.large-link {
+	font-size:32px;
+	padding-right:24px;
+}
+.small-link {
+	font-size:16px;
+	padding-right:16px;
+}
+.small-link a {
+
+}
+.main {
+	max-width:1200px;
+	padding-top:32px;
+}
+.content {
+	display:inline-block;
+	border-bottom:none;
+	vertical-align:top;
+	padding: 0px;
+	margin: 16px 8px 4px 8px;
+	overflow:auto;
+	background-color:rgba(255,255,255,0.8);
 }
 .navigation {
 	width:100%;
@@ -55,6 +111,7 @@ iframe {
 	border:0;
 	text-align:center;
 	vertical-align:middle;
+	background-color:rgba(255,255,255,0.8);
 }
 /*.navigation img {
 	border:0;

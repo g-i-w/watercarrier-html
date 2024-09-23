@@ -59,6 +59,11 @@
 		background-color:black;
 		border-radius:2px;
 	}
+	.main {
+		padding:8px;
+		max-width:90%;
+		background-color:rgba(255,255,255,0.9);
+	}
 	</style>
 </head>
 <body>
@@ -72,318 +77,320 @@
 		</tr>
 	</table>
 
+	<div class="main">
 
-	<ul>
-		<li><a href="#introduction">Introduction</a></li>
-		<li><a href="#create-from-the-web">Create from the Web</a></li>
-		<li><a href="#start-and-configure">Start and Configure</a></li>
-		<li><a href="#duplicate-offline">Duplicate Offline</a></li>
-		<li><a href="#bible-software">Bible.Local Software</a></li>
-		<li><a href="#conclusion">Conclusion</a></li>
-		<li><a href="#contact">Contact</a></li>
-	</ul>
+		<ul>
+			<li><a href="#introduction">Introduction</a></li>
+			<li><a href="#create-from-the-web">Create from the Web</a></li>
+			<li><a href="#start-and-configure">Start and Configure</a></li>
+			<li><a href="#duplicate-offline">Duplicate Offline</a></li>
+			<li><a href="#bible-software">Bible.Local Software</a></li>
+			<li><a href="#conclusion">Conclusion</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
 
-	<h1><a id="introduction">Introduction</a></h1>
+		<h1><a id="introduction">Introduction</a></h1>
 
-	<h3>What are BibleSD cards?</h3>
-	<ul>
-		<li>1,300 Bible translations (900 languages)</li>
-		<li>Interlinear Hebrew & Greek tools and commentaries</li>
-		<li>Free to distribute</li>
-	</ul>
-	<a href="pics/biblesd-open.png"><img src="pics/biblesd-open.png"></a>
-	<p>
-	BibleSD media includes over 1,300 Bible translations in over 900 languages (thanks to <a href="https://ebible.org/download.php">eBible.org</a>) and interlinear study tools (thanks to <a href="https://openbible.com">OpenBible.com</a>). The name BibleSD comes from "Bible" and "microSD", but other kinds of storage media can be used, including USB drives (32GB or larger). All content can be freely copied and distributed.
-	To facilitate duplication and distribution, BibleSD content can be downloaded as one <a href="https://matt2446.us/biblelocalsd.img.gz">image file</a> and block-level copied to media.
-	</p>
+		<h3>What are BibleSD cards?</h3>
+		<ul>
+			<li>1,300 Bible translations (900 languages)</li>
+			<li>Interlinear Hebrew & Greek tools and commentaries</li>
+			<li>Free to distribute</li>
+		</ul>
+		<a href="pics/biblesd-open.png"><img src="pics/biblesd-open.png"></a>
+		<p>
+		BibleSD media includes over 1,300 Bible translations in over 900 languages (thanks to <a href="https://ebible.org/download.php">eBible.org</a>) and interlinear study tools (thanks to <a href="https://openbible.com">OpenBible.com</a>). The name BibleSD comes from "Bible" and "microSD", but other kinds of storage media can be used, including USB drives (32GB or larger). All content can be freely copied and distributed.
+		To facilitate duplication and distribution, BibleSD content can be downloaded as one <a href="https://matt2446.us/biblelocalsd.img.gz">image file</a> and block-level copied to media.
+		</p>
 
-	<h3>What is Bible.Local?</h3>
-	<ul>
-		<li>Web-server hosting BibleSD content and Bible SuperSearch</li>
-		<li>Self-hosted WiFi network and DNS</li>
-		<li>Self-duplication tool to clone Bible.Local devices and produce BibleSD media</li>
-	</ul>
-	<a href="pics/biblelocal-pizero2-4-cropped.png"><img src="pics/biblelocal-pizero2-4-cropped.png"></a>
-	<p>
-	Bible.Local is a Linux-based operating system image which can run on several Raspberry Pi models.
-	When powered, the system creates a WiFi network and hosts a website with 1,300 Bible translations in over 900 languages (<a href="https://ebible.org/download.php">eBible.org</a>), interlinear study tools (<a href="https://openbible.com">OpenBible.com</a>), and an advanced multilingual search (thanks to <a href="https://www.biblesupersearch.com">BibleSuperSearch.com</a>).
-	</p>
-	<p>
-	The name Bible.Local is also the domain.
-	The home webpage is accessible at <a href="http://bible.local">http://bible.local</a>.
-	Familiar domains ending in ".com", ".org", or similar refer to Internet or World Area Network (WAN) resources,
-	while ".local" domains typically refer to Local Area Network (LAN) resources.
-	For resolution of local domains, the Bible.Local system provides a self-hosted Domain Name System (DNS) through Avahi (Bonjour).
-	</p>
-	<p>
-	The duplication tool (<a href="http://bible.local/duplication.html">http://bible.local/duplication.html</a>) allows additional Bible.Local systems and BibleSD media to be produced without an Internet connection.
-	Offline duplication can be useful to facilitate Bible distribution in places where Internet access is restricted or network connections to websites draw unwanted attention.
-	</p>
+		<h3>What is Bible.Local?</h3>
+		<ul>
+			<li>Web-server hosting BibleSD content and Bible SuperSearch</li>
+			<li>Self-hosted WiFi network and DNS</li>
+			<li>Self-duplication tool to clone Bible.Local devices and produce BibleSD media</li>
+		</ul>
+		<a href="pics/biblelocal-pizero2-4-cropped.png"><img src="pics/biblelocal-pizero2-4-cropped.png"></a>
+		<p>
+		Bible.Local is a Linux-based operating system image which can run on several Raspberry Pi models.
+		When powered, the system creates a WiFi network and hosts a website with 1,300 Bible translations in over 900 languages (<a href="https://ebible.org/download.php">eBible.org</a>), interlinear study tools (<a href="https://openbible.com">OpenBible.com</a>), and an advanced multilingual search (thanks to <a href="https://www.biblesupersearch.com">BibleSuperSearch.com</a>).
+		</p>
+		<p>
+		The name Bible.Local is also the domain.
+		The home webpage is accessible at <a href="http://bible.local">http://bible.local</a>.
+		Familiar domains ending in ".com", ".org", or similar refer to Internet or World Area Network (WAN) resources,
+		while ".local" domains typically refer to Local Area Network (LAN) resources.
+		For resolution of local domains, the Bible.Local system provides a self-hosted Domain Name System (DNS) through Avahi (Bonjour).
+		</p>
+		<p>
+		The duplication tool (<a href="http://bible.local/duplication.html">http://bible.local/duplication.html</a>) allows additional Bible.Local systems and BibleSD media to be produced without an Internet connection.
+		Offline duplication can be useful to facilitate Bible distribution in places where Internet access is restricted or network connections to websites draw unwanted attention.
+		</p>
 
-	<h1><a id="create-from-the-web">Create from the Web</a></h1>
-	<p>
-	<b>Anyone can create BibleSD media or Bible.Local systems.</b>
-	All content and software is freely redistributable (permissive open-source, creative commons, or public domain).
-	Simply download the image file and clone onto flash media.
-	</p>
-	<h3>1. Download the image file:</h3>
-	<ul>
-		<li><a href="https://matt2446.us/biblesd.img.gz">BibleSD</a> (5 GB download)</li>
-		<li><a href="https://matt2446.us/biblelocalsd.img.gz">Bible.Local</a> (16 GB download)</li>
-	</ul>
-	<h3>2. Attach microSD or USB media to the computer:</h3>
-	<table>
-		<tr><th>Media Content</th><th>Minimum Capacity</th><th>Media Type</th></tr>
-		<tr><td>BibleSD</td><td>32 GB</td><td>microSD, USB&nbsp;drive</td></tr>
-		<tr><td>Bible.Local</td><td>64 GB</td><td>microSD</td></tr>
-	</table>
-	<h3>3. Write the image file to the media.</h3>
-	<p>Below are software examples and instructions for writing an image file:</p>
-	<div>
-		<div class="sequence">
-			<h3>Example A: <a href="https://etcher.balena.io/">Balena Etcher</a></h3>
-			<div><a href="pics/etcher-1.png"><img src="pics/etcher-1.png"></a><p>1. Select the image file.</p></div>
-			<div><a href="pics/etcher-2.png"><img src="pics/etcher-2.png"></a><p>2. Select the device<br>(pay attention to size).</p></div>
-			<div><a href="pics/etcher-3.png"><img src="pics/etcher-3.png"></a><p>3. Click Flash<br>(might require password).</p></div>
-		</div><br>
-		<div class="sequence">
-			<h3>Example B: <a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager</a></h3>
-			<div><a href="pics/pi-imager-1.png"><img src="pics/pi-imager-1.png"></a><p>1. Select <b>No filtering.</b></p></div>
-			<div><a href="pics/pi-imager-2.png"><img src="pics/pi-imager-2.png"></a><p>2. Select <b>Use custom</b> and select the image file.</p></div>
-			<div><a href="pics/pi-imager-3.png"><img src="pics/pi-imager-3.png"></a><p>3. Select the device<br>(pay attention to size).</p></div>
-			<div><a href="pics/pi-imager-4.png"><img src="pics/pi-imager-4.png"></a><p>4. Click <b>NO</b> to customization.</p></div>
-			<div><a href="pics/pi-imager-5.png"><img src="pics/pi-imager-5.png"></a><p>5. Click <b>YES</b> to erase.</p></div>
-		</div><br>
-		<div class="sequence">
-			<h3>Example C: dd & gzip<br>(Mac or Linux)</h3>
-			<div><a href="pics/lsblk.png"><img src="pics/lsblk.png"></a><p>1. Find the root device name:</p><p>Open a <b>Terminal</b>, type <code>diskutil list</code> (Mac) or <code>lsblk</code> (Linux), and press <b>Enter</b>.</p><p>In the list, find the root name of the media to be written (example: <code>/dev/sdb</code> or <code>/dev/mmcblk0</code>).</p></div>
-			<div><a href="pics/umount.png"><img src="pics/umount.png"></a><p>2. Unmount the device:</p><p><b>Mac</b>: use <code>diskutil unmountDisk</code> with the root device name (example: <code>diskutil unmountDisk /dev/sdb</code>).</p><p><b>Linux</b>: use <code>umount</code> with each directory (if any) where the device is mounted (example: <code>umount /media/username/partition</code>).</p></div>
-			<div><a href="pics/downloads.png"><img src="pics/downloads.png"></a><p>3. Use <code>cd</code> to <b>c</b>hange <b>d</b>irectory to wherever the image file has been downloaded (example: <code>cd Downloads</code>).</p></div>
-			<div><a href="pics/dd-command.png"><img src="pics/dd-command.png"></a><p>4. Use <code>dd</code> and <code>gunzip</code> to unzip and write the image file, using the format below (all one line). Replace <code>/dev/mmcblk0</code> with the root name of the media.</p><code>gunzip -c biblelocalsd.img.gz | sudo dd of=/dev/mmcblk0 bs=4M status=progress</code><p>(May require entering your password.)</div>
+		<h1><a id="create-from-the-web">Create from the Web</a></h1>
+		<p>
+		<b>Anyone can create BibleSD media or Bible.Local systems.</b>
+		All content and software is freely redistributable (permissive open-source, creative commons, or public domain).
+		Simply download the image file and clone onto flash media.
+		</p>
+		<h3>1. Download the image file:</h3>
+		<ul>
+			<li><a href="https://matt2446.us/biblesd.img.gz">BibleSD</a> (5 GB download)</li>
+			<li><a href="https://matt2446.us/biblelocalsd.img.gz">Bible.Local</a> (16 GB download)</li>
+		</ul>
+		<h3>2. Attach microSD or USB media to the computer:</h3>
+		<table>
+			<tr><th>Media Content</th><th>Minimum Capacity</th><th>Media Type</th></tr>
+			<tr><td>BibleSD</td><td>32 GB</td><td>microSD, USB&nbsp;drive</td></tr>
+			<tr><td>Bible.Local</td><td>64 GB</td><td>microSD</td></tr>
+		</table>
+		<h3>3. Write the image file to the media.</h3>
+		<p>Below are software examples and instructions for writing an image file:</p>
+		<div>
+			<div class="sequence">
+				<h3>Example A: <a href="https://etcher.balena.io/">Balena Etcher</a></h3>
+				<div><a href="pics/etcher-1.png"><img src="pics/etcher-1.png"></a><p>1. Select the image file.</p></div>
+				<div><a href="pics/etcher-2.png"><img src="pics/etcher-2.png"></a><p>2. Select the device<br>(pay attention to size).</p></div>
+				<div><a href="pics/etcher-3.png"><img src="pics/etcher-3.png"></a><p>3. Click Flash<br>(might require password).</p></div>
+			</div><br>
+			<div class="sequence">
+				<h3>Example B: <a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager</a></h3>
+				<div><a href="pics/pi-imager-1.png"><img src="pics/pi-imager-1.png"></a><p>1. Select <b>No filtering.</b></p></div>
+				<div><a href="pics/pi-imager-2.png"><img src="pics/pi-imager-2.png"></a><p>2. Select <b>Use custom</b> and select the image file.</p></div>
+				<div><a href="pics/pi-imager-3.png"><img src="pics/pi-imager-3.png"></a><p>3. Select the device<br>(pay attention to size).</p></div>
+				<div><a href="pics/pi-imager-4.png"><img src="pics/pi-imager-4.png"></a><p>4. Click <b>NO</b> to customization.</p></div>
+				<div><a href="pics/pi-imager-5.png"><img src="pics/pi-imager-5.png"></a><p>5. Click <b>YES</b> to erase.</p></div>
+			</div><br>
+			<div class="sequence">
+				<h3>Example C: dd & gzip<br>(Mac or Linux)</h3>
+				<div><a href="pics/lsblk.png"><img src="pics/lsblk.png"></a><p>1. Find the root device name:</p><p>Open a <b>Terminal</b>, type <code>diskutil list</code> (Mac) or <code>lsblk</code> (Linux), and press <b>Enter</b>.</p><p>In the list, find the root name of the media to be written (example: <code>/dev/sdb</code> or <code>/dev/mmcblk0</code>).</p></div>
+				<div><a href="pics/umount.png"><img src="pics/umount.png"></a><p>2. Unmount the device:</p><p><b>Mac</b>: use <code>diskutil unmountDisk</code> with the root device name (example: <code>diskutil unmountDisk /dev/sdb</code>).</p><p><b>Linux</b>: use <code>umount</code> with each directory (if any) where the device is mounted (example: <code>umount /media/username/partition</code>).</p></div>
+				<div><a href="pics/downloads.png"><img src="pics/downloads.png"></a><p>3. Use <code>cd</code> to <b>c</b>hange <b>d</b>irectory to wherever the image file has been downloaded (example: <code>cd Downloads</code>).</p></div>
+				<div><a href="pics/dd-command.png"><img src="pics/dd-command.png"></a><p>4. Use <code>dd</code> and <code>gunzip</code> to unzip and write the image file, using the format below (all one line). Replace <code>/dev/mmcblk0</code> with the root name of the media.</p><code>gunzip -c biblelocalsd.img.gz | sudo dd of=/dev/mmcblk0 bs=4M status=progress</code><p>(May require entering your password.)</div>
+			</div>
 		</div>
-	</div>
-	<h3>4. What to do with the media:</h3>
-	<ul>
-		<li>If you have created <b>BibleSD</b> media, then the media can be removed or ejected and inserted into another computer, smartphone, or tablet, allowing the <b>Word of God</b> to be read and study tools applied to increase understanding.  <b>Give it away to someone, pray the Lord uses it to bring His Word into their heart, then create more BibleSD media to distribute!</b></li>
-		<li>If you have created <b>Bible.Local</b> media, then continue to the next steps in <i>Start and Configure</i> below.</li>
-	</ul>
-
-	<h1><a id="start-and-configure">Start and Configure</a></h1>
-	<p>
-	After a Bible.Local image file has been written to a microSD card, insert the card into a board, connect power, and configure the password and WiFi settings.
-	</p>
-	<h3>1. Insert the microSD card into a supported hardware model:</h3>
-	<div class="captions">
-		<div><a href="pics/biblelocal-pizero2-2-arrow.png"><img src="pics/biblelocal-pizero2-2-arrow.png"></a><p><a href="https://www.amazon.com/gp/product/B0CCRP85TR">Raspberry Pi Zero W 2</a></p></div>
-		<div><a href="pics/biblelocal-pi4-2-white.png"><img src="pics/biblelocal-pi4-2-white.png"></a><p><a href="https://www.amazon.com/gp/product/B07TD42S27">Raspberry Pi 4</a></p></div>
-	</div>
-	<h3>2. Connect a USB power adapter:</h3>
-	<div class="captions">
-		<div><a href="pics/biblelocal-pizero2-6-arrow-white.png"><img src="pics/biblelocal-pizero2-6-arrow-white.png"></a><p>Micro USB</p></div>
-		<div><a href="pics/biblelocal-pi4-pwr-white.png"><img src="pics/biblelocal-pi4-pwr-white.png"></a><p>USB-C</p></div>
-	</div>
-	<table>
-		<tr><th>Model</th><th>USB Type</th><th>Current Rating (Min/Ideal)</th></tr>
-		<tr><td>Zero&nbsp;W&nbsp;2</td><td>Micro USB</td><td>500mA/1A</td></tr>
-		<tr><td>4</td><td>USB-C</td><td>2A/3A</td></tr>
-	</table>
-	<ul>
-		<li>Note: Raspberry Pi Zero models can be powered through either Micro USB port, but the connector indicated (circled red) can only be used for power and cannot accept an OTG adapter.</li>
-	</ul>
-	<h3>3. Connect to the WiFi network:</h3>
-	<ul>
-		<li>Default WiFi SSID: <b>Living-Water</b></li>
-		<li>Default WiFi password: <b>John4-14</b>
-	</ul>
-	<h3>4. Open the configuration webpage:</h3>
-	<ul>
-		<li><a href="http://bible.local/configuration.html">http://bible.local/configuration.html</a></li>
-		<li>Note: to access <a href="http://bible.local">bible.local</a> on a smartphone, it may be necessary to disable cellular data or enable WiFi in Airplane Mode.</li>
-	</ul>
-	<h3>5. Change the server password:</h3>
-	<ul>
-		<li>Default server password: <b>John13:14</b></li>
-		<li>Enter the old password and a new password</li>
-		<li>Click <i>Update server password</i></li>
-	</ul>
-	<h3>6. Optional: change the WiFi settings:</h3>
-	<ul>
-		<li>Enter a new WiFi SSID and WiFi password</li>
-		<li>Enter your server password</li>
-		<li>Click <i>Change WiFi settings</i></li>
-		<li>Wait for the WiFi network to restart, and connect using the new settings.</li>
-	</ul>
-	<h3>7. Go share your WiFi settings with everyone, so they can connect and read God's Word!</h3>
-	<ul>
-		<li><h3><a href="http://bible.local">http://bible.local</a></h3></li>
-	</ul>
-
-	<h1><a id="duplicate-offline">Duplicate Offline</a></h1>
-	You can use the duplication webpage in your Bible.Local system to create BibleSD media and additional Bible.Local systems.
-	<h3> 1. Open the duplication webpage:</h3>
-	<ul>
-		<li><a href="http://bible.local/duplication.html">http://bible.local/duplication.html</a></li>
-	</ul>
-	<h3>2. Attach microSD or USB flash media.</h3>
-	<div class="captions">
-		<div><a href="pics/biblelocal-pizero2-otg-labels.png"><img src="pics/biblelocal-pizero2-otg-labels.png"></a><p>Raspberry Pi Zero W 2 with <a href="https://www.amazon.com/gp/product/B00LTHBCNM">OTG adapter</a> and <a href="https://www.amazon.com/gp/product/B09MRVCNHH">microSD reader</a></p></div>
-		<div><a href="pics/biblelocal-pi4-1-white.png"><img src="pics/biblelocal-pi4-1-white.png"></a><p>Raspberry Pi 4 with <a href="https://www.amazon.com/gp/product/B09MRVCNHH">microSD reader</a></p></div>
-	</div>
-	<ul>
-		<li><b>Raspberry Pi Zero W 2</b> model will require a Micro USB <a href="https://www.amazon.com/gp/product/B00LTHBCNM">OTG adapter</a>.</li>
-	</ul>
-	<h3>3. Start Writing</h3>
-	<ul>
-		<li>Click <b>BibleSD</b> or <b>Bible.Local</b> beside the corresponding device to begin writing.</li>
-		<li>Note: you can click <b>Cancel</b> to stop the writing process, and then the process will restart from the beginning if you click <b>BibleSD</b> or <b>Bible.Local</b> again.</li>
-	</ul>
-	<table>
-		<tr><th>Media Content</th><th>Minimum Capacity</th><th>Media Type</th></tr>
-		<tr><td>BibleSD</td><td>32 GB</td><td>microSD, USB&nbsp;drive</td></tr>
-		<tr><td>Bible.Local</td><td>64 GB</td><td>microSD</td></tr>
-	</table>
-	<h3>4. Complete</h3>
-	<ul>
-		<li><b>BibleSD</b>: media can be removed and inserted into another computer, smartphone, or tablet. <b>Give it away to someone, then create more BibleSD media to distribute!</b></li>
-		<li><b>Bible.Local</b>: media can be removed and inserted into a supported board to create another Bible.Local system. Note: the server password will <b>not</b> be the default password, and will instead be the same as the current password of the Bible.Local system used for duplication.  Follow the steps in <i>Start and Configure</i> for the new Bible.Local system.</li>
-	</ul>
-
-	<h1><a id="bible-software">Bible.Local Software</a></h1>
-	<h3>Translations</h3>
-	<a href="pics/translations.png"><img src="pics/translations.png"></a>
-	<ul>
-		<li><a href="http://bible.local/translations.html">Translations</a> contains links to 1,300 translations of the Bible in HTML and eBook (epub) formats.  The HTML format opens in the browser and the eBook format downloads as a file that can be opened by eBook readers.</li>
-		<li>Plain text format is available by changing the URL path from <b>html</b> to <b>text</b>, as shown in this example:
-			<ul>
-				<li><a href="http://bible.local/biblesd/bibles/ebible.org/Chinese/html/cmn-cu89s/">bible.local/biblesd/bibles/ebible.org/Chinese/<b>html</b>/cmn-cu89s/</a></li>
-				<li><a href="http://bible.local/biblesd/bibles/ebible.org/Chinese/text/cmn-cu89s/">bible.local/biblesd/bibles/ebible.org/Chinese/<b>text</b>/cmn-cu89s/</a></li>
-			</ul>
-		</li>
-		<li>This content originates from <a href="https://ebible.org/">eBible.org</a>.</li>
-	</ul>
-	<h3>SuperSearch</h3>
-	<a href="pics/biblesupersearch.png"><img src="pics/biblesupersearch.png"></a>
-	<ul>
-		<li><a href="http://bible.local/biblesupersearch_client/">Bible SuperSearch</a> is a multilingual advanced search that enables searching for passages of Scripture using both verse references and keywords.</li>
-		<li>Multiple translations and languages can be searched in parallel by clicking <b>Add Bible</b> and selecting from the dropdown menu.</li>
-		<li>Detailed API documentation is available at <a href="http://bible.local/biblesupersearch_api/public/">bible.local/biblesupersearch_api/public/</a></li>
-		<li>An administrative interface provides controls to configure the search and install additional Bible texts:
-			<ul>
-				<li>URL: <a href="http://bible.local/biblesupersearch_api/public/login">http://bible.local/biblesupersearch_api/public/login</a></li>
-				<li>username: <b>biblesupersearch</b></li>
-				<li>password: <b>John14-6</b></li>
-			</ul>
-		</li>
-		<li>This site is a stand-alone instance of the database and API available from <a href="https://www.biblesupersearch.com/">biblesupersearch.com</a>.</li>
-	</ul>
-	<h3>OpenBible</h3>
-	<a href="pics/openbible.png"><img src="pics/openbible.png"></a>
-	<ul>
-		<li><a href="http://bible.local/biblesd/bibles/openbible.com/">OpenBible</a> provides interlinear English translations with Hebrew and Greek.</li>
-		<li>Specific features include:
+		<h3>4. What to do with the media:</h3>
 		<ul>
-			<li>Strongs numbering, Hebrew and Greek translations, and usage references.</li>
-			<li>Various English commentaries for each chapter of the Bible.</li>
-			<li>A powerful English word search.</li>
+			<li>If you have created <b>BibleSD</b> media, then the media can be removed or ejected and inserted into another computer, smartphone, or tablet, allowing the <b>Word of God</b> to be read and study tools applied to increase understanding.  <b>Give it away to someone, pray the Lord uses it to bring His Word into their heart, then create more BibleSD media to distribute!</b></li>
+			<li>If you have created <b>Bible.Local</b> media, then continue to the next steps in <i>Start and Configure</i> below.</li>
 		</ul>
-		</li>
-		<li>This content is a stand-alone instance of <a href="https://openbible.com">openbible.com</a> produced by <a href="https://biblehub.com/">biblehub.com</a>.</li>
-	</ul>
-	<h3>Word Lookup</h3>
-	<a href="pics/wordlookup.png"><img src="pics/wordlookup.png"></a>
-	<ul>
-		<li><a href="http://bible.local/biblesd/bibles/biblelookup/">Word Lookup</a> is the initial beta version of software providing one-click display of verses containing a Hebrew or Greek word.</li>
-		<li>All words and Strongs numbers (excluding English words less than 4 characters in length) can be clicked to display every verse where that word or Strongs number is used.</li>
-		<li>English words and Strongs linking were parsed from the <a href="https://bereanbible.com/bsb_tables.xlsx">BSB Translation Tables</a>.</li>
-		<li>There are a few places (Example: end of Zachariah 2) where English words are out of synchronization with the Hebrew text.  These issues should be corrected in a future version.  As far as is currently known, the Hebrew and Greek texts are consistent with their source texts and the known problems are related to synchronization with English text.</li>
-		<li>This is provided as a helpful resource and for reference only.  For authoritative texts, please rely on texts in <a href="http://bible.local/translations.html">Translations</a>.</li>
-	</ul>
-	<h3>Backend Services</h3>
-	<a href="pics/primary-dirs.png"><img src="pics/primary-dirs.png"></a>
-	<ul>
-		<li>Main login: <code>ssh servant@bible.local</code>
+
+		<h1><a id="start-and-configure">Start and Configure</a></h1>
+		<p>
+		After a Bible.Local image file has been written to a microSD card, insert the card into a board, connect power, and configure the password and WiFi settings.
+		</p>
+		<h3>1. Insert the microSD card into a supported hardware model:</h3>
+		<div class="captions">
+			<div><a href="pics/biblelocal-pizero2-2-arrow.png"><img src="pics/biblelocal-pizero2-2-arrow.png"></a><p><a href="https://www.amazon.com/gp/product/B0CCRP85TR">Raspberry Pi Zero W 2</a></p></div>
+			<div><a href="pics/biblelocal-pi4-2-white.png"><img src="pics/biblelocal-pi4-2-white.png"></a><p><a href="https://www.amazon.com/gp/product/B07TD42S27">Raspberry Pi 4</a></p></div>
+		</div>
+		<h3>2. Connect a USB power adapter:</h3>
+		<div class="captions">
+			<div><a href="pics/biblelocal-pizero2-6-arrow-white.png"><img src="pics/biblelocal-pizero2-6-arrow-white.png"></a><p>Micro USB</p></div>
+			<div><a href="pics/biblelocal-pi4-pwr-white.png"><img src="pics/biblelocal-pi4-pwr-white.png"></a><p>USB-C</p></div>
+		</div>
+		<table>
+			<tr><th>Model</th><th>USB Type</th><th>Current Rating (Min/Ideal)</th></tr>
+			<tr><td>Zero&nbsp;W&nbsp;2</td><td>Micro USB</td><td>500mA/1A</td></tr>
+			<tr><td>4</td><td>USB-C</td><td>2A/3A</td></tr>
+		</table>
 		<ul>
-			<li>user: <b>servant</b></li>
-			<li>default password: <b>John13:14</b></li>
+			<li>Note: Raspberry Pi Zero models can be powered through either Micro USB port, but the connector indicated (circled red) can only be used for power and cannot accept an OTG adapter.</li>
 		</ul>
-		</li>
-		<li>Important directories:
+		<h3>3. Connect to the WiFi network:</h3>
 		<ul>
-			<li><code>/home/servant/watercarrier</code>: Java package directory containing the classes to run the <a href="http://bible.local/duplication.html">duplication</a> and <a href="http://bible.local/configuration.html">configuration</a> web interfaces; requires <b>creek</b> and <b>paddle</b> (<a href="https://github.com/g-i-w/watercarrier">github.com/g-i-w/watercarrier</a>).</li>
-			<li><code>/home/servant/creek</code>: data file parsing and text structures (<a href="https://github.com/g-i-w/creek">github.com/g-i-w/creek</a>).</li>
-			<li><code>/home/servant/paddle</code>: mini TCP/UDP/HTTP server (<a href="https://github.com/g-i-w/paddle">github.com/g-i-w/paddle</a>).</li>
-			<li><code>/var/www/html/</code>: root web directory (<a href="https://github.com/g-i-w/watercarrier-html">github.com/g-i-w/watercarrier-html</a>).</li>
-			<li><code>/var/www/html/biblesd</code>: BibleSD content containing 1,300 Bible translations in HTML, epub, and text.</li>
-			<li><code>/var/www/html/biblesupersearch_api</code>: Bible SuperSearch backend PHP code and Bible text modules.</li>
-			<li><code>/var/www/html/biblesupersearch_client</code>: Bible SuperSearch frontend JavaScript code.</li>
+			<li>Default WiFi SSID: <b>Living-Water</b></li>
+			<li>Default WiFi password: <b>John4-14</b>
 		</ul>
-		</li>
-		<li>Main software packages:
-			<ul>
-				<li><b>Apache2</b>: main web server.</i>
-				<li><b>MariaDB</b>: database supporting Bible SuperSearch:
+		<h3>4. Open the configuration webpage:</h3>
+		<ul>
+			<li><a href="http://bible.local/configuration.html">http://bible.local/configuration.html</a></li>
+			<li>Note: to access <a href="http://bible.local">bible.local</a> on a smartphone, it may be necessary to disable cellular data or enable WiFi in Airplane Mode.</li>
+		</ul>
+		<h3>5. Change the server password:</h3>
+		<ul>
+			<li>Default server password: <b>John13:14</b></li>
+			<li>Enter the old password and a new password</li>
+			<li>Click <i>Update server password</i></li>
+		</ul>
+		<h3>6. Optional: change the WiFi settings:</h3>
+		<ul>
+			<li>Enter a new WiFi SSID and WiFi password</li>
+			<li>Enter your server password</li>
+			<li>Click <i>Change WiFi settings</i></li>
+			<li>Wait for the WiFi network to restart, and connect using the new settings.</li>
+		</ul>
+		<h3>7. Go share your WiFi settings with everyone, so they can connect and read God's Word!</h3>
+		<ul>
+			<li><h3><a href="http://bible.local">http://bible.local</a></h3></li>
+		</ul>
+
+		<h1><a id="duplicate-offline">Duplicate Offline</a></h1>
+		You can use the duplication webpage in your Bible.Local system to create BibleSD media and additional Bible.Local systems.
+		<h3> 1. Open the duplication webpage:</h3>
+		<ul>
+			<li><a href="http://bible.local/duplication.html">http://bible.local/duplication.html</a></li>
+		</ul>
+		<h3>2. Attach microSD or USB flash media.</h3>
+		<div class="captions">
+			<div><a href="pics/biblelocal-pizero2-otg-labels.png"><img src="pics/biblelocal-pizero2-otg-labels.png"></a><p>Raspberry Pi Zero W 2 with <a href="https://www.amazon.com/gp/product/B00LTHBCNM">OTG adapter</a> and <a href="https://www.amazon.com/gp/product/B09MRVCNHH">microSD reader</a></p></div>
+			<div><a href="pics/biblelocal-pi4-1-white.png"><img src="pics/biblelocal-pi4-1-white.png"></a><p>Raspberry Pi 4 with <a href="https://www.amazon.com/gp/product/B09MRVCNHH">microSD reader</a></p></div>
+		</div>
+		<ul>
+			<li><b>Raspberry Pi Zero W 2</b> model will require a Micro USB <a href="https://www.amazon.com/gp/product/B00LTHBCNM">OTG adapter</a>.</li>
+		</ul>
+		<h3>3. Start Writing</h3>
+		<ul>
+			<li>Click <b>BibleSD</b> or <b>Bible.Local</b> beside the corresponding device to begin writing.</li>
+			<li>Note: you can click <b>Cancel</b> to stop the writing process, and then the process will restart from the beginning if you click <b>BibleSD</b> or <b>Bible.Local</b> again.</li>
+		</ul>
+		<table>
+			<tr><th>Media Content</th><th>Minimum Capacity</th><th>Media Type</th></tr>
+			<tr><td>BibleSD</td><td>32 GB</td><td>microSD, USB&nbsp;drive</td></tr>
+			<tr><td>Bible.Local</td><td>64 GB</td><td>microSD</td></tr>
+		</table>
+		<h3>4. Complete</h3>
+		<ul>
+			<li><b>BibleSD</b>: media can be removed and inserted into another computer, smartphone, or tablet. <b>Give it away to someone, then create more BibleSD media to distribute!</b></li>
+			<li><b>Bible.Local</b>: media can be removed and inserted into a supported board to create another Bible.Local system. Note: the server password will <b>not</b> be the default password, and will instead be the same as the current password of the Bible.Local system used for duplication.  Follow the steps in <i>Start and Configure</i> for the new Bible.Local system.</li>
+		</ul>
+
+		<h1><a id="bible-software">Bible.Local Software</a></h1>
+		<h3>Translations</h3>
+		<a href="pics/translations.png"><img src="pics/translations.png"></a>
+		<ul>
+			<li><a href="http://bible.local/translations.html">Translations</a> contains links to 1,300 translations of the Bible in HTML and eBook (epub) formats.  The HTML format opens in the browser and the eBook format downloads as a file that can be opened by eBook readers.</li>
+			<li>Plain text format is available by changing the URL path from <b>html</b> to <b>text</b>, as shown in this example:
 				<ul>
-					<li>database: <b>biblesupersearch</b></li>
-					<li>user: <b>biblesupersearch</b></li>
-					<li>password: <b>John4</b></li>
+					<li><a href="http://bible.local/biblesd/bibles/ebible.org/Chinese/html/cmn-cu89s/" style="font-size:10px;">bible.local/biblesd/bibles/ebible.org/Chinese/<b>html</b>/cmn-cu89s/</a></li>
+					<li><a href="http://bible.local/biblesd/bibles/ebible.org/Chinese/text/cmn-cu89s/" style="font-size:10px;">bible.local/biblesd/bibles/ebible.org/Chinese/<b>text</b>/cmn-cu89s/</a></li>
 				</ul>
-				</li>
-				<li><b>OpenJDK</b>: runtime environment for <a href="http://bible.local/duplication.html">duplication</a> and <a href="http://bible.local/configuration.html">configuration</a> web interfaces.</i>
-				<li><b>UFW</b>: firewall configuration.</li>
+			</li>
+			<li>This content originates from <a href="https://ebible.org/">eBible.org</a>.</li>
+		</ul>
+		<h3>SuperSearch</h3>
+		<a href="pics/biblesupersearch.png"><img src="pics/biblesupersearch.png"></a>
+		<ul>
+			<li><a href="http://bible.local/biblesupersearch_client/">Bible SuperSearch</a> is a multilingual advanced search that enables searching for passages of Scripture using both verse references and keywords.</li>
+			<li>Multiple translations and languages can be searched in parallel by clicking <b>Add Bible</b> and selecting from the dropdown menu.</li>
+			<li>Detailed API documentation is available at <a href="http://bible.local/biblesupersearch_api/public/">bible.local/biblesupersearch_api/public/</a></li>
+			<li>An administrative interface provides controls to configure the search and install additional Bible texts:
+				<ul>
+					<li>URL: <a href="http://bible.local/biblesupersearch_api/public/login" style="font-size:10px;">http://bible.local/biblesupersearch_api/public/login</a></li>
+					<li>username: <b>biblesupersearch</b></li>
+					<li>password: <b>John14-6</b></li>
+				</ul>
+			</li>
+			<li>This site is a stand-alone instance of the database and API available from <a href="https://www.biblesupersearch.com/">biblesupersearch.com</a>.</li>
+		</ul>
+		<h3>OpenBible</h3>
+		<a href="pics/openbible.png"><img src="pics/openbible.png"></a>
+		<ul>
+			<li><a href="http://bible.local/biblesd/bibles/openbible.com/">OpenBible</a> provides interlinear English translations with Hebrew and Greek.</li>
+			<li>Specific features include:
+			<ul>
+				<li>Strongs numbering, Hebrew and Greek translations, and usage references.</li>
+				<li>Various English commentaries for each chapter of the Bible.</li>
+				<li>A powerful English word search.</li>
 			</ul>
-		</li>
-		<li>Bible.Local services (located in <code>/etc/systemd/system</code>):
-		<ul>
-			<li><b>biblelocal-configuration.service</b>: web interface to update user and WiFi passwords.</li>
-			<li><b>biblelocal-duplication.service</b>: web interface to allow duplication of BibleSD and Bible.Local media.</li>
-			<li><b>biblelocal-wifi.service</b>: operates the WiFi network.</li>
+			</li>
+			<li>This content is a stand-alone instance of <a href="https://openbible.com">openbible.com</a> produced by <a href="https://biblehub.com/">biblehub.com</a>.</li>
 		</ul>
-		</li>
-		<li>Open ports:
+		<h3>Word Lookup</h3>
+		<a href="pics/wordlookup.png"><img src="pics/wordlookup.png"></a>
 		<ul>
-			<li><b>22</b>: <code>sshd</code> SSH login
-			<li><b>80</b>: <code>apache2</code> main web server
-			<li><b>53</b>: <code>dnsmasq</code>  (DNS & name resolution)
-			<li><b>67</b>: <code>dnsmasq</code>  (DNS & name resolution)
-			<li><b>5353</b>: <code>avahi-daemon</code> (DNS & name resolution)
-			<li><b>7000</b>: <code>java</code> duplication web interface
-			<li><b>8000</b>: <code>java</code> configuration web interface
+			<li><a href="http://bible.local/biblesd/bibles/biblelookup/">Word Lookup</a> is the initial beta version of software providing one-click display of verses containing a Hebrew or Greek word.</li>
+			<li>All words and Strongs numbers (excluding English words less than 4 characters in length) can be clicked to display every verse where that word or Strongs number is used.</li>
+			<li>English words and Strongs linking were parsed from the <a href="https://bereanbible.com/bsb_tables.xlsx">BSB Translation Tables</a>.</li>
+			<li>There are a few places (Example: end of Zachariah 2) where English words are out of synchronization with the Hebrew text.  These issues should be corrected in a future version.  As far as is currently known, the Hebrew and Greek texts are consistent with their source texts and the known problems are related to synchronization with English text.</li>
+			<li>This is provided as a helpful resource and for reference only.  For authoritative texts, please rely on texts in <a href="http://bible.local/translations.html">Translations</a>.</li>
 		</ul>
-		</li>
-	</ul>
+		<h3>Backend Services</h3>
+		<a href="pics/primary-dirs.png"><img src="pics/primary-dirs.png"></a>
+		<ul>
+			<li>Main login: <code>ssh servant@bible.local</code>
+			<ul>
+				<li>user: <b>servant</b></li>
+				<li>default password: <b>John13:14</b></li>
+			</ul>
+			</li>
+			<li>Important directories:
+			<ul>
+				<li><code>/home/servant/watercarrier</code>: Java package directory containing the classes to run the <a href="http://bible.local/duplication.html">duplication</a> and <a href="http://bible.local/configuration.html">configuration</a> web interfaces; requires <b>creek</b> and <b>paddle</b> (<a href="https://github.com/g-i-w/watercarrier">github.com/g-i-w/watercarrier</a>).</li>
+				<li><code>/home/servant/creek</code>: data file parsing and text structures (<a href="https://github.com/g-i-w/creek">github.com/g-i-w/creek</a>).</li>
+				<li><code>/home/servant/paddle</code>: mini TCP/UDP/HTTP server (<a href="https://github.com/g-i-w/paddle">github.com/g-i-w/paddle</a>).</li>
+				<li><code>/var/www/html/</code>: root web directory (<a href="https://github.com/g-i-w/watercarrier-html">github.com/g-i-w/watercarrier-html</a>).</li>
+				<li><code>/var/www/html/biblesd</code>: BibleSD content containing 1,300 Bible translations in HTML, epub, and text.</li>
+				<li><code style="font-size:10px;">/var/www/html/biblesupersearch_api</code>: Bible SuperSearch backend PHP code and Bible text modules.</li>
+				<li><code style="font-size:10px;">/var/www/html/biblesupersearch_client</code>: Bible SuperSearch frontend JavaScript code.</li>
+			</ul>
+			</li>
+			<li>Main software packages:
+				<ul>
+					<li><b>Apache2</b>: main web server.</i>
+					<li><b>MariaDB</b>: database supporting Bible SuperSearch:
+					<ul>
+						<li>database: <b>biblesupersearch</b></li>
+						<li>user: <b>biblesupersearch</b></li>
+						<li>password: <b>John4</b></li>
+					</ul>
+					</li>
+					<li><b>OpenJDK</b>: runtime environment for <a href="http://bible.local/duplication.html">duplication</a> and <a href="http://bible.local/configuration.html">configuration</a> web interfaces.</i>
+					<li><b>UFW</b>: firewall configuration.</li>
+				</ul>
+			</li>
+			<li>Bible.Local services (located in <code>/etc/systemd/system</code>):
+			<ul>
+				<li><b>biblelocal-configuration.service</b>: web interface to update user and WiFi passwords.</li>
+				<li><b>biblelocal-duplication.service</b>: web interface to allow duplication of BibleSD and Bible.Local media.</li>
+				<li><b>biblelocal-wifi.service</b>: operates the WiFi network.</li>
+			</ul>
+			</li>
+			<li>Open ports:
+			<ul>
+				<li><b>22</b>: <code>sshd</code> SSH login
+				<li><b>80</b>: <code>apache2</code> main web server
+				<li><b>53</b>: <code>dnsmasq</code>  (DNS & name resolution)
+				<li><b>67</b>: <code>dnsmasq</code>  (DNS & name resolution)
+				<li><b>5353</b>: <code>avahi-daemon</code> (DNS & name resolution)
+				<li><b>7000</b>: <code>java</code> duplication web interface
+				<li><b>8000</b>: <code>java</code> configuration web interface
+			</ul>
+			</li>
+		</ul>
 
-	<h1><a id="conclusion">Conclusion</a></h1>
-	<ul>
-		<li><b>Ask the Lord Jesus to use BibleSD media and Bible.Local systems in His harvest.</b></li>
-		<li>Keep reading His Word and giving it away to everyone, whether in digital or print form.</li>
-		<li>Time is short, and the Lord is coming back soon.  <b>Be ready and watching for His return!</b></li>
-	</ul>
-	<i>"The harvest is indeed plentiful, but the laborers are few. <b>Pray therefore to the Lord of the harvest</b>, that he may send out laborers into his harvest."</i>
-	<a href="biblesd/bibles/ebible.org/English/html/engwebp/LUK10.htm#V2">Luke 10:2</a>
-	<br><br>
-	<i>"knowing this first, that in the last days mockers will come, walking after their own lusts and saying, "Where is the promise of his coming? For, from the day that the fathers fell asleep, all things continue as they were from the beginning of the creation." For they willfully forget that there were heavens from of old, and an earth formed out of water and amid water by the word of God, by which means the world that existed then, being overflowed with water, perished."</i>
-	<a href="biblesd/bibles/ebible.org/English/html/engwebp/2PE03.htm#V3">2 Peter 3:3-6</a>
-	<br><br>
-	<i>"As the days of Noah were, so will the coming of the Son of Man be.  For as in those days which were before the flood they were eating and drinking, marrying and giving in marriage, until the day that Noah entered into the ship,  and they didn't know until the flood came and took them all away, so will the coming of the Son of Man be.  Then two men will be in the field: one will be taken and one will be left.  Two women will be grinding at the mill: one will be taken and one will be left.  <b>Watch therefore, for you don't know in what hour your Lord comes.</b>"</i>
-	<a href="biblesd/bibles/ebible.org/English/html/engwebp/MAT24.htm#V37">Matthew 24:37-41</a>
-	<br><br>
-	<i>"But concerning the times and the seasons, brothers, you have no need that anything be written to you. For you yourselves know well that the day of the Lord comes like a thief in the night. For when they are saying, "Peace and safety," then sudden destruction will come on them, like birth pains on a pregnant woman. Then they will in no way escape. But <b>you, brothers, aren't in darkness, that the day should overtake you like a thief</b>. You are all children of light and children of the day. We don't belong to the night, nor to darkness, <b>so then let's not sleep, as the rest do, but let's watch and be sober.</b>"</i>
-	<a href="biblesd/bibles/ebible.org/English/html/engwebp/1TH05.htm#V1">1 Thessalonians 5:1-6</a>
-	<br><br>
+		<h1><a id="conclusion">Conclusion</a></h1>
+		<ul>
+			<li><b>Ask the Lord Jesus to use BibleSD media and Bible.Local systems in His harvest.</b></li>
+			<li>Keep reading His Word and giving it away to everyone, whether in digital or print form.</li>
+			<li>Time is short, and the Lord is coming back soon.  <b>Be ready and watching for His return!</b></li>
+		</ul>
+		<i>"The harvest is indeed plentiful, but the laborers are few. <b>Pray therefore to the Lord of the harvest</b>, that he may send out laborers into his harvest."</i>
+		<a href="biblesd/bibles/ebible.org/English/html/engwebp/LUK10.htm#V2">Luke 10:2</a>
+		<br><br>
+		<i>"knowing this first, that in the last days mockers will come, walking after their own lusts and saying, "Where is the promise of his coming? For, from the day that the fathers fell asleep, all things continue as they were from the beginning of the creation." For they willfully forget that there were heavens from of old, and an earth formed out of water and amid water by the word of God, by which means the world that existed then, being overflowed with water, perished."</i>
+		<a href="biblesd/bibles/ebible.org/English/html/engwebp/2PE03.htm#V3">2 Peter 3:3-6</a>
+		<br><br>
+		<i>"As the days of Noah were, so will the coming of the Son of Man be.  For as in those days which were before the flood they were eating and drinking, marrying and giving in marriage, until the day that Noah entered into the ship,  and they didn't know until the flood came and took them all away, so will the coming of the Son of Man be.  Then two men will be in the field: one will be taken and one will be left.  Two women will be grinding at the mill: one will be taken and one will be left.  <b>Watch therefore, for you don't know in what hour your Lord comes.</b>"</i>
+		<a href="biblesd/bibles/ebible.org/English/html/engwebp/MAT24.htm#V37">Matthew 24:37-41</a>
+		<br><br>
+		<i>"But concerning the times and the seasons, brothers, you have no need that anything be written to you. For you yourselves know well that the day of the Lord comes like a thief in the night. For when they are saying, "Peace and safety," then sudden destruction will come on them, like birth pains on a pregnant woman. Then they will in no way escape. But <b>you, brothers, aren't in darkness, that the day should overtake you like a thief</b>. You are all children of light and children of the day. We don't belong to the night, nor to darkness, <b>so then let's not sleep, as the rest do, but let's watch and be sober.</b>"</i>
+		<a href="biblesd/bibles/ebible.org/English/html/engwebp/1TH05.htm#V1">1 Thessalonians 5:1-6</a>
+		<br><br>
 
-	<h1><a id="contact">Contact</a></h1>
-	Feel free to contact me with any questions/suggestions:
-	<ul>
-		<li>Email: <a href="mailto:info@matt2446.us">info@matt2446.us</a></li>
-		<li>Call/text (US +1):
-		334
-		-
-		310
-		-
-		1802
-		</li>
-	</ul>
-	<br><br>
+		<h1><a id="contact">Contact</a></h1>
+		Feel free to contact me with any questions/suggestions:
+		<ul>
+			<li>Email: <a href="mailto:info@matt2446.us">info@matt2446.us</a></li>
+			<li>Call/text (US +1):
+			334
+			-
+			310
+			-
+			1802
+			</li>
+		</ul>
+		<br><br>
+	</div>
 
 </body>
 </html>
