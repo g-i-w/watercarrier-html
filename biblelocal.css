@@ -41,12 +41,12 @@ iframe {
 }
 body {
 	font-family:sans-serif;
-	margin:0 0 0 0;
-	padding:0 0 0 0;
-	border:0 0 0 0;
-	top: 0;
-	left: 0;
-	width: 100%;
+	margin:0;
+	padding:0;
+	border:0;
+	top:0;
+	left:0;
+	width:100%;
 	background-image:url('pics/lookout-mtn.jpg');
 	background-attachment:fixed;
 	background-repeat: no-repeat;
@@ -70,7 +70,7 @@ body {
 	text-decoration:underline;
 }
 .td-center {
-	padding-left:16px;
+	padding-left:24px;
 	text-align:center;
 }
 .no-top-border td,div {
@@ -82,11 +82,10 @@ body {
 }
 .small-link {
 	font-size:16px;
-	padding-right:16px;
+	padding-right:24px;
 }
 .sub-link {
 	font-size:12px;
-	padding-right:16px;
 }
 .small-link a {
 
