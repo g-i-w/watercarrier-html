@@ -11,7 +11,6 @@
 			border:0 0 0 0;
 			left:0px;
 			overflow:hidden;
-			background-color:white;
 		}
 		h1,h2,h3,h4,h5 {
 			margin:8px 24px 8px 24px;
@@ -49,11 +48,8 @@
 			margin:8px 24px 8px 24px;
 			border-collapse:collapse;
 		}
-		td {
-			min-width:16px;
-			vertical-align:top;
-			padding:4px;
-			border-top:solid rgb(200,200,200) 1px;
+		ul {
+			padding-right:16px;
 		}
 		.highlight {
 			background-color:lightblue;
@@ -68,20 +64,23 @@
 		}
 		.compact-table td {
 			padding:4px 4px 0 0;
+			border-top:solid white 1px;
 		}
 		.content {
 			display:inline-block;
 			border-bottom:none;
 			vertical-align:top;
+			text-align:left;
 			padding: 0px;
 			margin: 16px 8px 4px 8px;
 			overflow:auto;
+			border-top:solid white 1px;
 		}
 		.scroll-box {
 			overflow:auto;
 			max-height:350px;
 			max-width:300px;
-			background-color:rgb(246,246,246);
+			/*background-color:rgb(246,246,246);*/
 			margin:0 0 16px 0;
 
 		}
@@ -119,15 +118,17 @@
 		}
 	</style>
 </head>
-<body style="background-image:url('pics/china-retreat.jpg');">
+<body style="background-image:url('pics/still-lake.jpg');">
 
 	<table class="navigation">
 		<tr>
-		<td class="icon-char"><a href="index.html">&#x1F3E0;</a></td>
-		<td><a href="translations.html"><span class="icon-char">&#x1f30d;</span> Translations</a></td>
-                <td class="icon-char"><a href="biblesd/Salvation.html">&#x271D;</a></td>
+		<td class="icon-char"><a href="index.html">&#x1F3E0;</a> > <a href="bible.html">&#x1F4D6;</a> > <a href="translations.html">&#x1f30d;</a></td>
+		<td>Translations</td>
+                <td class="icon-char"><a href="salvation.html">&#x271D;</a></td>
 		</tr>
 	</table>
+	
+	<center>
 
 	<div class="content">
 		<h3>English</h3>
@@ -1297,6 +1298,8 @@
 			</table>		
 		</div>
 	</div>
+	
+	</center>
 
 </body>
 </html>
