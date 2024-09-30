@@ -16,10 +16,10 @@ a:hover {
 	text-decoration:underline;
 	/*background-color:rgba(0,127,255,0.3);*/
 }
-h1 {
+/*h1 {
 	border-top:solid 1px #a0a0a0;
 	color:gray;
-}
+}*/
 table {
 	font-size:16px;
 	border-collapse:collapse;
@@ -69,12 +69,30 @@ body {
 .icon-char a:hover {
 	text-decoration:underline;
 }
+.td-title {
+	font-weight:bold;
+	text-align:center;
+}
 .td-center {
 	padding-left:24px;
+	padding-right:24px;
 	text-align:center;
+}
+.td-no-padding {
+	padding:0;
+}
+.td-image {
+	padding:0;
+	border-top:0;
 }
 .no-top-border td,div {
 	border-top:0;
+}
+.title-link {
+	font-size:24px;
+	text-align:center;
+	margin-left:8px;
+	margin-right:8px;
 }
 .large-link {
 	font-size:32px;
@@ -102,6 +120,10 @@ body {
 	margin: 16px 8px 4px 8px;
 	overflow:auto;
 	background-color:rgba(255,255,255,0.8);
+}
+.content ul {
+	text-align:left;
+	margin-right:16px;
 }
 .navigation {
 	width:100%;
