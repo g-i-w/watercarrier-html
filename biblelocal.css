@@ -28,7 +28,7 @@ table {
 td,th {
 	vertical-align:middle;
 	text-align:left;
-	border-top:solid rgba(255,255,255,0.5) 1px;
+	border-top:solid rgba(255,255,255,0.4) 1px;
 	padding:8px;
 }
 td img {
@@ -72,6 +72,7 @@ body {
 }
 .td-title {
 	text-align:center;
+	
 }
 .td-center {
 	padding-left:24px;
