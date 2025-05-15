@@ -55,6 +55,9 @@ body {
 	background-color:lightgray;
 	color:white;
 }
+li {
+	margin-bottom:4px;
+}
 .icon-char {
 	font-weight:normal;
 	font-family:serif;
